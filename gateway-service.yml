@@ -13,9 +13,7 @@ spring:
         - id: event-service
           uri: lb://event-service
           predicates:
-            - Path=/event/**
-          filters:
-            - RewritePath=/event/(?<path>.*), /$\{path}
+            - Path=/api/event/**
       globalcors:
         corsConfigurations:
           '[/**]':
