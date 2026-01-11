@@ -36,6 +36,8 @@ spring:
                 allowCredentials: false
 
 eureka:
+  instance:
+    prefer-ip-address: false
   client:
     serviceUrl:
       defaultZone: http://localhost:8061/eureka/
